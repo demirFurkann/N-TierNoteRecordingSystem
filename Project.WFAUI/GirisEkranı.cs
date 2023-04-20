@@ -21,20 +21,27 @@ namespace Project.WFAUI
             _db = DBTool.DbInstance;
         }
 
-        
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (_db.Students.Any(x => x.Number == txtPassword.Text))
+            if (_db.AppUsers.Any(x => x.UserName == txtUserName.Text && x.Password == txtPassword.Text))
             {
-                FrmOgrenciDetay frd = new FrmOgrenciDetay();
-                frd.numara = txtPassword.Text;
-                frd.Show();
+                FrmOgretmen frod = new FrmOgretmen(txtPassword.Text);
+                frod.ShowDialog();
                 this.Hide();
             }
-            else
+            if (_db.Students.Any(x => x.Number == txtPassword.Text&& x.FirstName== txtUserName.Text))
             {
-                MessageBox.Show("Yanlış Bilgi Girdiniz");
+                FrmOgrenciDetay frd = new FrmOgrenciDetay(txtPassword.Text);
+
+
+                frd.ShowDialog();
+                this.Hide();
             }
+         
+            
+
+
         }
     }
 }

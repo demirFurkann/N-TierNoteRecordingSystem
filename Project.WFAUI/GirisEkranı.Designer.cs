@@ -55,7 +55,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(620, 62);
+            this.txtUserName.Location = new System.Drawing.Point(39, 66);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(122, 20);
@@ -73,7 +73,7 @@
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(618, 37);
+            this.label11.Location = new System.Drawing.Point(37, 41);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(123, 24);
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(268, 347);
+            this.ClientSize = new System.Drawing.Size(257, 293);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);

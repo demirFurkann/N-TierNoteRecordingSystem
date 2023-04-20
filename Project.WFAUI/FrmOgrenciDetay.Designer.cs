@@ -175,7 +175,7 @@
             // lblAdSoyad
             // 
             this.lblAdSoyad.AutoSize = true;
-            this.lblAdSoyad.Location = new System.Drawing.Point(125, 12);
+            this.lblAdSoyad.Location = new System.Drawing.Point(117, 12);
             this.lblAdSoyad.Name = "lblAdSoyad";
             this.lblAdSoyad.Size = new System.Drawing.Size(48, 26);
             this.lblAdSoyad.TabIndex = 5;

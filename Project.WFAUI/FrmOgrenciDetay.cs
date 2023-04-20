@@ -19,21 +19,40 @@ namespace Project.WFAUI
         MyContext _db;
 
         StudentRepository _sRep;
-        public FrmOgrenciDetay()
+
+        string _num;
+        public FrmOgrenciDetay(string numara)
         {
             InitializeComponent();
             _db = DBTool.DbInstance;
+            _num = numara;
             _sRep = new StudentRepository();
 
         }
 
-
-        public string numara;
-
         private void FrmOgrenciDetay_Load(object sender, EventArgs e)
         {
-           
-            lblNumara.Text = numara;
+            Student s = _db.Students.FirstOrDefault(x => x.Number == _num);
+
+            if (s != null)
+            {
+                lblAdSoyad.Text = s.FirstName + " " + s.LastName;
+                lblNumara.Text = s.Number;
+
+            }
+
+            List<Student> exams = _db.Students.Where(x => x.Number == s.Number).ToList();
+
+            for (int i = 0; i < exams.Count; i++)
+            {
+
+                lblSınav1.Text = exams[i].Test1.ToString();
+                lblSınav2.Text = exams[i].Test2.ToString();
+                lblSınav3.Text = exams[i].Test3.ToString();
+
+            }
+
+
 
         }
     }
