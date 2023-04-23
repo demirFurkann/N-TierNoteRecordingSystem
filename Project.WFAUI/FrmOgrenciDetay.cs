@@ -38,17 +38,10 @@ namespace Project.WFAUI
             {
                 lblAdSoyad.Text = s.FirstName + " " + s.LastName;
                 lblNumara.Text = s.Number;
-
-            }
-
-            List<Student> exams = _db.Students.Where(x => x.Number == s.Number).ToList();
-
-            for (int i = 0; i < exams.Count; i++)
-            {
-
-                lblSınav1.Text = exams[i].Test1.ToString();
-                lblSınav2.Text = exams[i].Test2.ToString();
-                lblSınav3.Text = exams[i].Test3.ToString();
+                lblSınav1.Text = s.Test1;
+                lblSınav2.Text = s.Test2;
+                lblSınav3.Text = s.Test3;
+                lblOrt.Text = s.Case.ToString();
 
             }
 

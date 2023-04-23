@@ -26,9 +26,9 @@ namespace Project.WFAUI
         {
             if (_db.AppUsers.Any(x => x.UserName == txtUserName.Text && x.Password == txtPassword.Text))
             {
-                FrmOgretmen frod = new FrmOgretmen(txtPassword.Text);
+                FrmOgretmenEkrani frod = new FrmOgretmenEkrani(txtPassword.Text);
                 frod.ShowDialog();
-                this.Hide();
+                
             }
             if (_db.Students.Any(x => x.Number == txtPassword.Text&& x.FirstName== txtUserName.Text))
             {
@@ -36,7 +36,7 @@ namespace Project.WFAUI
 
 
                 frd.ShowDialog();
-                this.Hide();
+                
             }
          
             

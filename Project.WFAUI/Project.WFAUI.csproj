@@ -64,11 +64,11 @@
     <Compile Include="FrmOgrenciDetay.Designer.cs">
       <DependentUpon>FrmOgrenciDetay.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOgretmen.cs">
+    <Compile Include="FrmOgretmenEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOgretmen.Designer.cs">
-      <DependentUpon>FrmOgretmen.cs</DependentUpon>
+    <Compile Include="FrmOgretmenEkrani.Designer.cs">
+      <DependentUpon>FrmOgretmenEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="GirisEkranı.cs">
       <SubType>Form</SubType>
@@ -76,18 +76,13 @@
     <Compile Include="GirisEkranı.Designer.cs">
       <DependentUpon>GirisEkranı.cs</DependentUpon>
     </Compile>
-    <Compile Include="NTierNoteRecordingSystemDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NTierNoteRecordingSystemDBDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmOgrenciDetay.resx">
       <DependentUpon>FrmOgrenciDetay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOgretmen.resx">
-      <DependentUpon>FrmOgretmen.cs</DependentUpon>
+    <EmbeddedResource Include="FrmOgretmenEkrani.resx">
+      <DependentUpon>FrmOgretmenEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisEkranı.resx">
       <DependentUpon>GirisEkranı.cs</DependentUpon>
@@ -101,17 +96,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="NTierNoteRecordingSystemDBDataSet.xsc">
-      <DependentUpon>NTierNoteRecordingSystemDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="NTierNoteRecordingSystemDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>NTierNoteRecordingSystemDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NTierNoteRecordingSystemDBDataSet.xss">
-      <DependentUpon>NTierNoteRecordingSystemDBDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

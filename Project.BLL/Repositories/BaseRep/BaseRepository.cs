@@ -129,6 +129,7 @@ namespace Project.BLL.Repositories.BaseRep
             T toBeUpdated = Find(item.ID);
 
             _db.Entry(toBeUpdated).CurrentValues.SetValues(item);
+            Save();
 
 
 
