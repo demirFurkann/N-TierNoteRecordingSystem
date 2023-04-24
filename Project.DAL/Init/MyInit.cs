@@ -15,8 +15,8 @@ namespace Project.DAL.Init
         {
             #region Öğretmen
             AppUser au = new AppUser();
-            au.UserName = "furkan";
-            au.Password = "1234";
+            au.UserName = "irfan";
+            au.Password = "4321";
             au.Role = ENTITIES.Enums.UserRole.Teacher;
             context.AppUsers.Add(au);
             context.SaveChanges();

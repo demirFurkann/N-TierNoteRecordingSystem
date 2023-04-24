@@ -38,10 +38,13 @@ namespace Project.WFAUI
             {
                 lblAdSoyad.Text = s.FirstName + " " + s.LastName;
                 lblNumara.Text = s.Number;
-                lblSınav1.Text = s.Test1;
-                lblSınav2.Text = s.Test2;
-                lblSınav3.Text = s.Test3;
-                lblOrt.Text = s.Case.ToString();
+                lblSınav1.Text = s.Test1.ToString();
+                lblSınav2.Text = s.Test2.ToString();
+                lblSınav3.Text = s.Test3.ToString();
+                lblDurum.Text = s.Case.ToString();
+
+              s.Average=  (s.Test1 + s.Test2 + s.Test3) / 3;
+                lblOrt.Text= s.Average.ToString();
 
             }
 

@@ -11,10 +11,12 @@ namespace Project.ENTITIES.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Number { get; set; }
-        public string Test1 { get; set; }
-        public string Test2 { get; set; }
-        public string Test3 { get; set; }
+        public int Test1 { get; set; }
+        public int Test2 { get; set; }
+        public int Test3 { get; set; }
         public bool Case { get; set; }
+
+        public int Average { get; set; }
 
         public int? AppUserID { get; set; }
 
